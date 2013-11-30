@@ -2,6 +2,7 @@
 
 namespace JohnKramlich;
 
+use JohnKramlich\FederalPovertyLevel\Exception;
 use \DateTime;
 
 /**
@@ -108,13 +109,14 @@ class FederalPovertyLevel
      * Sets the The year we are working with, e.g. 2013, 2014.
      *
      * @param int $year the year
+     * @throws Exception
      *
      * @return self
      */
     public function setYear($year)
     {
         if ($year !== 2013 && $year !== 2014) {
-            throw new \Exception("Unsupported year for Federal Poverty Level");
+            throw new Exception("Unsupported year for Federal Poverty Level");
         }
 
         $this->year = $year;
@@ -240,7 +242,8 @@ class FederalPovertyLevel
     /**
      * Get Poverty Guideline as Percentage
      *
-     * @return int|float Absolute integer value e.g. 1%, 100%, 150%
+     * @param int $precision Precision of return value
+     * @return int|float Value e.g. 1%, 100%, 150%
      */
     public function getPovertyGuidelineAsPercentage($precision = 2)
     {
@@ -256,6 +259,7 @@ class FederalPovertyLevel
     /**
      * Get Poverty Guideline as Decimal
      *
+     * @param int $precision Precision of return value
      * @return int|float Decimal value of poverty guideline, e.g. 0.5, 1.0, 4.0
      */
     public function getPovertyGuidelineAsDecimal($precision = 2)
