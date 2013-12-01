@@ -34,11 +34,13 @@ $percentageOfFpl = $fpl->getPovertyGuidelineAsDecimal(); // e.g. 0.5
         $ composer require-dev johnkramlich/federal-poverty-level
 
 <a name="about-author"/>
-### Author
+## Author
 
 John Kramlich - <me@johnkramlich.com> - <http://twitter.com/jkramlich>
 
-<a name="about-license"/>
-### License
+If you use this library please send me an email / tweet and let me know.  I always like to know when my code is useful to others.
 
-Carbon is licensed under the MIT License - see the `LICENSE` file for details
+<a name="about-license"/>
+## License
+
+federalPovertyLevel is licensed under the MIT License - see the `LICENSE` file for details
