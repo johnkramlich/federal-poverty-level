@@ -1,8 +1,9 @@
 {
     "name": "johnkramlich/federal-poverty-level",
+    "type": "library",
+    "keywords": ["FPL","poverty","government","medicaid","HHS"],
     "description": "A PHP library for working with data associated with the United States Federal Poverty Level (FPL). Household income, as a percentage of FPL is often used to determine eligibility for government assistance programs such as Medicaid.",
     "license": "MIT",
-    "minimum-stability": "stable",
     "authors": [
         {
             "name": "John Kramlich",
